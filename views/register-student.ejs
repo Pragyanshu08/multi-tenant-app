@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= tanentId %> - Add User</title>
+</head>
+<body>
+  <h1>Add User for <%= tanentId %></h1>
+  <form action="/<%= tanentId %>/form" method="POST">
+
+    <input type="text" name="name" placeholder="Enter name" required>
+    <button type="submit">Add</button>
+  </form>
+</body>
+</html>

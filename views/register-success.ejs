@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><title>Registered</title></head>
+<body>
+  <h2>Tenant Registered!</h2>
+  <p><strong>Tenant ID:</strong> <%= Tlink %></p>
+  <p>Share this link with students:</p>
+  <a href="<%= Tlink %>"><%= Tlink %></a>
+
+
+  <% if (qr) { %>
+    <h3>QR Code:</h3>
+    <img src="<%= qr %>" />
+  <% } %>
+</body>
+</html>
