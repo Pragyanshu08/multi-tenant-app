@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const DBconn = async()=>{
       try {
-        await mongoose.connect("mongodb://localhost:27017/multiTanentProject");
+        await mongoose.connect(process.env.MONGO_URI);
       } catch (error){
         console.log(error);
       }
